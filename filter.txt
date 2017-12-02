@@ -1,12 +1,42 @@
 ! Title: List-RP
 !
-! Filter that enables removing of ads, trackers, and various scripts from websites with Korean content.
-! Based on Corset, Korean Adblock filter, Youslist.
-! Combined and augmented with Adguard-specific rules for enhanced filtering
-! This filter is expected to be used alongside with English filter.
 !
+!-----Naver-----!
+##.area_newsstand
+###themecast
+##.column_banner
+###shop_cast
+###veta_top
+###veta_branding
+!
+!
+!-----Daum-----!
+##.wing_tmp
+###cEtc
+###kakaotv
+!
+!
+!-----Enuri-----!
+###topBannerNew
+###area2
+###exhibition
+##.today-con
+###area1
+###main_experience
+###bannerId6
+##.bnr_area
+##.maincont-section:nth-of-type(3)
+###department_price
+###tblFooter
 ! 
-!
+! 
+! 
+! 
+! 
+! 
+!-------------------------------------------------------------!
+!------ Below LIST-KR ----------------------------------------!
+!-------------------------------------------------------------!
 !
 !-------------------------------------------------------------------------------!
 !------------------ URL Filters ------------------------------------------------!
