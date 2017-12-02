@@ -1,10 +1,3 @@
-﻿! Title: List-KR
-! Checksum: FfmAggSlm/DwUqJKf/Uchw
-! Description: Filter that enables removing of ads, trackers, and various scripts from websites with Korean content. Based on Corset, Korean Adblock filter, Youslist. Combined and augmented with Adguard-specific rules for enhanced filtering This filter is expected to be used alongside with English filter.
-! Version: 1.0.3.55
-! TimeUpdated: 2017-12-02T01:33:05.410+04:00
-! Expires: 2 days (update frequency)
-!
 ! Title: List-KR
 !
 ! Filter that enables removing of ads, trackers, and various scripts from websites with Korean content.
@@ -245,7 +238,7 @@
 ||blog.naver.com/AdPostInjectAsync.nhn
 ||bloter.net/wp-admin/admin-ajax.php
 ||boannews.com/images/banner/$image
-||boannews.com/main_files/main_banner*.asp^
+||boannews.com/main_files/main_banner*.asp^ 
 ||boannews.com/main_files/main_right.asp^
 ||boannews.com/media/include/media_view_banner.asp^
 ||boardplugin.com/js/rsbLast.js^
@@ -482,7 +475,7 @@
 ||js.keywordsconnect.com^
 ||js2.keywordsconnect.com^
 ||jshoppingbox.joinsmsn.com^
-||json.dcinside.com/*/app_ad_setting.php^
+||json.dcinside.com/*/app_ad_setting.php^ 
 ||jssearch.net^$third-party
 ||jtbc.joins.com/common/json2XMLvast.aspx^
 ||k-starshop.com^$third-party
@@ -746,6 +739,7 @@
 /img/index_banner$~third-party,domain=etobang.co.kr|etobang.com|etorrent.co.kr|etorrent.kr|tvcafe.co.kr
 /img/jotv$~third-party,domain=cucudas.com|kukudas.com
 /index.php?mid=*&search_target=*&search_keyword=$~third-party,script,domain=bluewings.me|issuein.com|juventus.kr
+/\/innak_banner\/(?!bottom)/$domain=innak.kr
 /skin/images/adblockblock.js^$domain=ruinses.tistory.com
 /skin/images/fuckadblock.js^$domain=linsoo.co.kr
 ||info/files/_etc/etc/$image,domain=tczoa.info|tqzoa.info|twzoa.info
@@ -754,7 +748,7 @@
 !----------------------------------------------------!
 !
 ://ad.smartmediarep.com/NetInsight/video/$replace=/"ads"/"x"/,xmlhttprequest,other,app=kr.co.sbs.videoplayer,important
-://api-city.livere.com/livereDataLoad*&livereCallback=$other,replace=/"tenping_ad":/"x":/
+://api-city.livere.com/livereDataLoad*&livereCallback=$other,replace=/"tenping_ad":/"x":/  
 ://apis.naver.com/rmcnmv/rmcnmv/vod/play/v2.0/*&ver=2.0&devt=html5_pc&doct=json&*&adi=*$replace=/"advertise":\{/"noopstr":{/
 ://dev.livere.co.kr/livereDataLoad*&livereCallback=$other,replace=/"tenping_ad":/"x":/
 ://kr.popin.cc/popin_discovery/recommend?mode=new&*&ad=$replace=/"(ad|ad_video|ad_reserved|ad_reserved_video)"\s*?\:/"x\$1"\:/,script
@@ -936,8 +930,8 @@ asiatoday.co.kr##div.mask_div
 asiatoday.co.kr##iframe[src^="/comm/ads/"]
 auction.co.kr##.plan-affiliate
 auth.spcnetworks.kr###adBackground
-avsnoop.co.uk###adArea
-avsnoop.co.uk##.banner > a[href^="/_ad.php?"]
+avsnoop.co.uk###adArea 
+avsnoop.co.uk##.banner > a[href^="/_ad.php?"] 
 avsnoop.co.uk##.infobox > .p2 + .p4
 avsnoop.co.uk##tr.ad
 bamtoki.com##[id^="banner_"]
@@ -960,8 +954,8 @@ biz.heraldcorp.com,news.heraldcorp.com##.ad_8
 biz.heraldcorp.com,news.heraldcorp.com##.ad_9
 biz.heraldcorp.com,news.heraldcorp.com##.con_right > .c_r_top:nth-child(6)
 biz.heraldcorp.com,news.heraldcorp.com##.con_right > script + .c_r_top
-biz.heraldcorp.com,news.heraldcorp.com##.news_content > DIV[style*="padding-left"]
-biz.heraldcorp.com,news.heraldcorp.com##.news_detail_area > DIV[style*="699px;"]
+biz.heraldcorp.com,news.heraldcorp.com##.news_content > DIV[style*="padding-left"] 
+biz.heraldcorp.com,news.heraldcorp.com##.news_detail_area > DIV[style*="699px;"] 
 biz.heraldcorp.com,news.heraldcorp.com##.subpg_news_body > DIV[style*="200"]
 biz.heraldcorp.com,news.heraldcorp.com##[class^="h_banner"]
 biz.khan.co.kr,sports.khan.co.kr,weekly.khan.co.kr##.ad_movFocus
@@ -1660,7 +1654,7 @@ m.nocutnews.co.kr###divContent > DIV[style*="200px"]
 m.nocutnews.co.kr##.ct1 > .con_b
 m.nocutnews.co.kr##.subtop_ad
 m.nocutnews.co.kr##.viewpic > div[style$="height:60px;"]
-m.nocutnews.co.kr##DIV[id^="AD_LIVE_AREA"]
+m.nocutnews.co.kr##DIV[id^="AD_LIVE_AREA"] 
 m.ohmynews.com###adDaum
 m.ohmynews.com###adDaum_top
 m.ohmynews.com##div.ad_box_outline
@@ -1845,6 +1839,10 @@ mt.co.kr##div.aside_bundle>div.mgt16
 mt.co.kr##ul.ad.only_640un
 mtn.co.kr###contentsBody > #banner230
 mtn.co.kr##.advertisement
+!+ PLATFORM(ios, ext_android_cb, ext_opera, ext_ublock, ext_ff)
+mtoo.kr##.gpe_contents_box > a > img
+!+ PLATFORM(ios, ext_android_cb, ext_opera, ext_ublock, ext_ff)
+mtoo.kr##div[class^="scban_"]
 mule.co.kr##.ad1
 mule.co.kr##.ad6
 mule.co.kr##.ad7
@@ -1984,7 +1982,7 @@ nocutnews.co.kr##div.ad1
 nocutnews.co.kr##div.ad_sky2
 nocutnews.co.kr##div.ad_view
 nocutnews.co.kr##div.view_ban
-nownews.seoul.co.kr##.cnt_footer + p[style]
+nownews.seoul.co.kr##.cnt_footer + p[style] 
 nownews.seoul.co.kr##.newest + p[style]
 nownews.seoul.co.kr##div.Rad
 nownews.seoul.co.kr##div[style="float:left; width:675px; height:154px;"]
@@ -2006,7 +2004,7 @@ ohmynews.com##ul.ad_area
 okky.kr##.main-banner-wrapper
 ondemandkorea.com###floating_banner_item
 ondemandkorea.com###odk_player > #overlay_div
-ondemandkorea.com###programs > #list > li[style^="width:"][style*="!important"]
+ondemandkorea.com###programs > #list > li[style^="width:"][style*="!important"] 
 ondemandkorea.com##.main_banner
 onlifezone.com##.gpe_pm_conban_code
 osen.mt.co.kr###aside2 > DIV[style*="height:"]
@@ -2093,7 +2091,7 @@ seoul.co.kr###CLink
 seoul.co.kr###criteo_div
 seoul.co.kr###eMartDiv
 seoul.co.kr###seoulAdTable
-seoul.co.kr###withpang_p
+seoul.co.kr###withpang_p 
 seoul.co.kr##a[href="http://empire.seoul.co.kr"]
 seoul.co.kr##DIV[style*="320px"][style*="250px"]
 seoul.co.kr##div.aside>div[style="margin-bottom:20px"]
@@ -2728,7 +2726,7 @@ zipbogo.net##.sidebar > ul > li[-ext-has='a[href*="/ad/"],a[onclick^="visitWebBa
 !------ JS rules ------------------------------------!
 !----------------------------------------------------!
 !
-! Section contains list of script filtering,
+! Section contains list of script filtering, 
 ! that are commonly achieved by third party userscripts.
 !
 !------ anti-adblock neutralizers -------------------
