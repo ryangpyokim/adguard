@@ -14,6 +14,7 @@
 ##.wing_tmp
 ##.wrap_topic
 ##.hc_news_pc_cEtc_inside_daum.inside_view
+||lithium.daum.net/cpc/div/html/*
 !
 !
 !-----Enuri-----!
