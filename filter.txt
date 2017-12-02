@@ -30,7 +30,11 @@
 ###tblFooter
 ! 
 ! 
-! 
+!-----Exception-----!
+@@||coolenjoy.net/data/editor/
+@@||coolenjoy.net/data/bbs
+@@||ds.11st.co.kr/
+@@||cafeptthumb-phinf.pstatic.net
 ! 
 ! 
 ! 
