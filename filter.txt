@@ -12,7 +12,7 @@
 !
 !-----Daum-----!
 ##.wing_tmp
-###cEtc
+##.wrap_topic
 !
 !
 !-----Enuri-----!
