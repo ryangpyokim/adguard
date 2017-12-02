@@ -11,9 +11,6 @@
 !
 !
 !-----Daum-----!
-##.wing_tmp
-###cEtc
-###kakaotv
 !
 !
 !-----Enuri-----!
