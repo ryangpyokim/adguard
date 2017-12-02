@@ -1,4 +1,4 @@
-! Title: List-KR
+! Title: List-RP
 !
 ! Filter that enables removing of ads, trackers, and various scripts from websites with Korean content.
 ! Based on Corset, Korean Adblock filter, Youslist.
@@ -2771,7 +2771,3 @@ postshare.co.kr$$script[type="text/javascript"][tag-content="COPY PROTECTED BY"]
 !----------------------------------------------------!
 !------ TEMP ----------------------------------------!
 !----------------------------------------------------!
-@@||cc.naver.com^$app=com.nhn.android.nmap
-@@||mlbpark.donga.com^$generichide
-||image.cauly.co.kr^
-!@@||{anigod}^$urlblock
