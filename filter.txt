@@ -5,8 +5,8 @@
 ! Combined and augmented with Adguard-specific rules for enhanced filtering
 ! This filter is expected to be used alongside with English filter.
 !
-! Homepage: https://List-KR.github.io
-! License: https://creativecommons.org/licenses/by-sa/4.0/deed.hi
+! 
+!
 !
 !-------------------------------------------------------------------------------!
 !------------------ URL Filters ------------------------------------------------!
