@@ -8,6 +8,8 @@
 ###shop_cast
 ###veta_top
 ###veta_branding
+||pstatic.net/tveta
+@@||cafeptthumb-phinf.pstatic.net
 !
 !
 !-----Daum-----!
@@ -15,6 +17,7 @@
 ##.wrap_topic
 ##.hc_news_pc_cEtc_inside_daum.inside_view
 ||lithium.daum.net/cpc/div/html/*
+###kakaotv
 !
 !
 !-----Enuri-----!
@@ -30,7 +33,18 @@
 ###department_price
 ###tblFooter
 ! 
-! 
+!
+!-----Danawa-----!
+##div:nth-of-type(2) > a[href^="http://prod.danawa.com/info/"]
+##div:nth-of-type(4) > a[href^="http://prod.danawa.com/info/"]
+##div:nth-of-type(3) > a[href^="http://prod.danawa.com/info/"]
+##div:nth-of-type(1) > a[href^="http://prod.danawa.com/info/"]
+!
+!
+!-----ppomppu-----!
+||img.ppomppu.co.kr/zboard/*/banner
+!
+!
 !-----Exception-----!
 @@||coolenjoy.net/data/editor/
 @@||coolenjoy.net/data/bbs
